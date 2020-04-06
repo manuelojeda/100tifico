@@ -1,1 +1,3 @@
-console.log("Hola Platzi")
+import Router from './routes'
+
+window.addEventListener('load', Router)
