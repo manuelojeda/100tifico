@@ -14,9 +14,7 @@ module.exports = {
     rules: [
       {
         test: /\.js?$/,
-        exclude: [
-          'node_modules'
-        ],
+        exclude: /'node_modules'/,
         use: {
           loader: 'babel-loader'
         }
@@ -27,7 +25,7 @@ module.exports = {
     new HWP(
       {
         inject: true,
-        template: path.resolve(__dirname, '/public/index.html'),
+        template: './public/index.html',
         filename: './index.html'
       }
     )
